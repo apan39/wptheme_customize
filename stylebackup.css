@@ -1,0 +1,593 @@
+/*
+Theme Name: OceanWP Child
+Theme URI: https://oceanwp.org/
+Description: OceanWP WordPress theme example child theme.
+Author: Nick
+Author URI: https://oceanwp.org/
+Template: oceanwp
+Version: 1.0
+*/
+
+/* Parent stylesheet should be loaded from functions.php not using @import */
+
+
+/* --------- BEGIN JJ style for all devices ---------*/
+
+/* Fixa felplacerad x knapp product variations*/
+.woocommerce div.product form.cart .variations .reset_variations {
+	margin-top: 0px !important;
+}
+
+/* JJ Padding top and bottom of section elements */
+.holea_section_1_large_left_4_small_right,
+.holea_section_4_small_horizontal,
+.holea_section_1_large_right_4_small_left {
+	padding-top: 10px !important;
+	padding-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
+.page_om_holea {
+	padding-top: 10px;
+	color: black;
+}
+
+#main {
+	padding-top: 10px;
+}
+
+#main #content-wrap {
+	padding-top: 0px !important;
+}
+
+/* background color content area */
+/* Fixa vit bakgrund före storleksval knapp product variations*/
+.site-main,
+.woocommerce div.product.elementor form.cart table.variations td.value:before {
+	background-color: #F5FEF9 !important;
+}
+
+.holea_category_archive .oceanwp-row .span_1_of_4 {
+	width: 25% !important;
+}
+
+/* Remove uppskattat frakt pris */
+.woocommerce-shipping-destination {
+	display: none !important;
+}
+
+/* Make text black */
+.woocommerce-billing-fields,
+.cart_item,
+.woocommerce-mini-cart .quantity,
+.kundservice-sida p,
+.elementor-widget-oew-contact-form-7,
+.woocommerce-product-details__short-description,
+.woocommerce-tabs {
+	color: black;
+}
+
+.wpcf7 input,
+.wpcf7 textarea {
+	border-style: solid !important;
+	border-width: 1px !important;
+	border-color: #4dc400 !important;
+}
+
+.place-order .button.alt {
+	background-color: #4dc400;
+}
+
+.shop_table .woocommerce-Price-amount.amount {
+	color: #ff733b;
+}
+
+/* Is this needed? messed up categories page */
+.woocommerce .products.tablet-2-col .type-product {
+	/* width: 100% !important; */
+}
+
+/* RENAME to mobile and holea JJ reset and center mobile search widget */
+.holea_mobile_search_widget {
+	display: flex !important;
+	align-self: center !important;
+	margin: 0 !important;
+}
+
+/* JJ reset and center mobile search widget */
+.holea_mobile_menu_right_column .elementor-widget-wrap {
+	flex-wrap: nowrap !important;
+	margin: -2px 0 -2px 0 !important;
+}
+
+.elementor-menu-cart__wrapper {
+	position: relative !important;
+	top: 2px !important;
+}
+
+.holea_mobile_search_widget,
+.holea_mobile_cart_amount_container {
+	width: auto !important;
+}
+
+.elementor-inner {
+	background-color: #f5fff9 !important;
+}
+
+/* JJ Set set header height */
+.oceanwp-sticky-header-holder {
+	height: auto !important;
+}
+
+/* JJ homepage store item title styling */
+ul.products li.product li.title a {
+	color: #18512d !important;
+}
+
+/* JJ homepage store item box title styling */
+.woocommerce ul.products li.product .woo-entry-inner li.title {
+	text-align: left !important;
+	border: 1px solid #1d1b1b !important;
+	color: #18512d !important;
+	border-radius: 5px !important;
+}
+
+/* JJ Make desktop menu narrow, holea_desktop_menu set in elementor custom css */
+.holea_desktop_menu .elementor-item {
+	margin: 4px 10px 4px 10px !important;
+	padding: 0 !important;
+}
+
+/* JJ style desktop menu underline*/
+.holea_desktop_menu>.elementor-item:before,
+.elementor-item::after {
+	background-color: white !important;
+	height: 2px !important;
+}
+
+/* JJ Style the searchbox */
+/* .probox svg {
+	fill: black !important;
+} */
+
+/* JJ move the container amount to the right side of cart */
+.holea_cart_amount_container .elementor-button.elementor-size-sm {
+	flex-direction: row-reverse;
+	padding: 0px;
+}
+
+.holea_cart_amount_container .amount {
+	color: dimgrey;
+}
+
+.elementor-button--view-cart,
+.elementor-button--checkout {
+	background-color: #42bc04 !important;
+	font-weight: bold !important;
+}
+
+/* JJ Resetting product parameters */
+.woocommerce ul.products .product {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* JJ position and style product title */
+.title {
+	position: absolute;
+	padding-right: 5px;
+	padding-left: 5px;
+	z-index: 10;
+	background-color: white;
+	color: black;
+	font-weight: bold;
+}
+
+/* JJ style kampanj banner */
+.onsale {
+	padding-top: 4px !important;
+	padding-bottom: 2px !important;
+	top: 30px !important;
+	left: -4px !important;
+	font-size: large !important;
+}
+
+/* JJ set border and radius around product image */
+/* .holea_section_1_large_left_4_small_right .woo-entry-image img,
+.holea_section_4_small_horizontal .woo-entry-image img,
+.holea_section_1_large_right_4_small_left .woo-entry-image img,
+.holea_category_archive */
+.woo-entry-image img,
+.woocommerce-product-gallery__wrapper div {
+	border: 1px solid #18512d !important;
+	border-radius: 5px !important;
+}
+
+/* JJ On shop landing page position the price and old price container */
+.holea_section_1_large_left_4_small_right .inner,
+.holea_section_4_small_horizontal .inner,
+.holea_section_1_large_right_4_small_left .inner {
+	position: absolute !important;
+	left: 0px !important;
+	bottom: 9px !important;
+	z-index: 20;
+}
+
+/* JJ On shop landing page position and the normal price */
+.inner .price .woocommerce-Price-amount.amount {
+	background-color: #ff733b !important;
+	font-size: 35px !important;
+	left: 6px !important;
+	bottom: -21px !important;
+	position: absolute !important;
+	color: white !important;
+	border: 1px solid !important;
+	border-radius: 5px !important;
+}
+
+/* JJ Fix price position on checkout page cross sell */
+.cross-sells .inner .price .woocommerce-Price-amount.amount {
+	z-index: 100 !important;
+	bottom: 25px !important;
+	font-size: 28px !important;
+}
+
+/* JJ On shop landing page style on sale price */
+.sale .inner ins span.woocommerce-Price-amount.amount {
+	position: absolute !important;
+	background-color: red !important;
+	color: white !important;
+	padding: 0px 10px 0px 10px !important;
+	left: 6px !important;
+	bottom: -21px !important;
+	border-radius: 5px !important;
+}
+
+/* JJ On shop landing page style and position on sale original price */
+.sale .inner del span.woocommerce-Price-amount.amount {
+	position: absolute !important;
+	/* left: -105px !important;
+	bottom: 33px !important; */
+	background-color: rgb(38, 35, 35) !important;
+	color: white !important;
+	font-size: 34px !important;
+	opacity: 1 !important;
+	left: 6px !important;
+	bottom: 23px !important;
+	z-index: 100 !important;
+	border-radius: 5px !important;
+}
+
+/* JJ On shop landing page style and position buy button*/
+.product_type_simple.add_to_cart_button.ajax_add_to_cart,
+.product_type_variable.add_to_cart_button {
+	position: absolute !important;
+	padding: 0px 10px 0px 10px !important;
+	z-index: 10;
+	right: 1px !important;
+	bottom: 1px !important;
+	font-size: 150% !important;
+	font-weight: 800;
+}
+
+/* ----- Style holea_category_archive page and holea_product_page_archive section ------*/
+
+/* Position original and sale price container */
+.holea_product_page_archive .inner {
+	position: absolute !important;
+	left: 0px !important;
+	bottom: 9px !important;
+	z-index: 20;
+}
+
+.holea_category_archive .inner {
+	position: absolute !important;
+	left: 0px !important;
+	bottom: -34px !important;
+	z-index: 20;
+}
+
+/* Position original price */
+.holea_category_archive .inner .price .woocommerce-Price-amount.amount,
+.holea_product_page_archive .sale .inner del span.woocommerce-Price-amount.amount {
+	bottom: 21px !important;
+}
+
+/* Position sale price on category archive page and archive section on products page*/
+.holea_category_archive .sale .inner ins span.woocommerce-Price-amount.amount .holea_product_page_archive .sale .inner ins span.woocommerce-Price-amount.amount {
+	bottom: 40px !important;
+}
+
+/* Position original price on category archive page */
+.holea_category_archive .sale .inner del span.woocommerce-Price-amount.amount {
+	bottom: 65px !important;
+}
+
+/* Style products space between each other and width*/
+.holea_category_archive .elementor-element.elementor-wc-products ul.products li.product,
+.holea_product_page_archive .elementor-element.elementor-wc-products ul.products li.product {
+	width: 25% !important;
+	padding: 2px !important;
+}
+
+/* Style list view */
+.holea_category_archive .elementor-element.elementor-wc-products ul.products .list li.product,
+.holea_product_page_archive .elementor-element.elementor-wc-products ul.products .list li.product {
+	width: 100% !important;
+	padding: 2px !important;
+}
+
+/* Align add to cart button at the bottom of a product */
+.holea_category_archive .sale .product_type_simple.add_to_cart_button.ajax_add_to_cart,
+.product_type_variable.add_to_cart_button,
+.holea_product_page_archive .button.product_type_variable.add_to_cart_button {
+	bottom: 2px !important;
+}
+
+/* ----- END Style holea_category_archive and holea_product_page_archive page ------*/
+
+
+/* JJ set buy button hover color */
+.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
+	background-color: #f5fff9 !important;
+}
+
+/* JJ Make buy button visible after button is pressed */
+.woocommerce ul.products li.product .button.added {
+	display: block !important;
+}
+
+/* JJ make weird changed buy button invisible */
+.added_to_cart.wc-forward {
+	display: none !important;
+}
+
+
+/* JJ Position quick-view button*/
+.owp-quick-view {
+	position: absolute !important;
+	top: 50%;
+	height: 30px
+}
+
+/* JJ Sets the style properties of the sales pitch bar */
+.holea_sale_pitch .elementor-widget {
+	margin: 0 0 -6px 0 !important;
+	padding: 0 !important;
+}
+
+/* Style and center mobile pitch menu*/
+.holea_sale_pitch_mobile .elementor-row {
+	border-top: 1px solid;
+	flex-wrap: nowrap !important;
+}
+
+.holea_sale_pitch_mobile .elementor-text-editor {
+	white-space: nowrap;
+}
+
+/* --------- END style for all devices ---------*/
+
+
+/* --------- BEGIN JJ style for ipad (max-width 959px)  ---------*/
+@media screen and (max-width: 959px) {
+	.woocommerce .products.tablet-2-col {
+		/* width: 100% !important; */
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	/* Resize buy button text*/
+	.product_type_variable.add_to_cart_button {
+		font-size: 120% !important;
+	}
+
+	/* Position original price category page*/
+	.holea_category_archive .sale .inner del span.woocommerce-Price-amount.amount {
+		bottom: 52px !important;
+	}
+
+	.sale .inner del span.woocommerce-Price-amount.amount,
+	.sale .inner ins span.woocommerce-Price-amount.amount {
+		font-size: 140% !important;
+	}
+
+	/* Position original price holea_section */
+	.holea_section_1_large_right_4_small_left .sale .inner del span.woocommerce-Price-amount.amount,
+	.holea_section_4_small_horizontal .sale .inner del span.woocommerce-Price-amount.amount {
+		bottom: 11px !important;
+	}
+
+	/* Position original price product page archive*/
+	.holea_product_page_archive .sale .inner del span.woocommerce-Price-amount.amount {
+		bottom: 11px !important;
+	}
+
+	.holea_section_4_small_horizontal,
+	.holea_section_1_large_left_4_small_right {
+		padding-top: 45px !important;
+	}
+
+
+}
+
+
+
+
+/* --------- BEGIN JJ style for mobile (max-width 601px) ---------*/
+@media screen and (max-width: 601px) {
+	.holea_top_section_space {
+		padding-top: 52px !important;
+	}
+
+	/* Resize buy button */
+	.product_type_variable.add_to_cart_button {
+		font-size: 100% !important;
+	}
+
+	/* ----- Style holea_category_archive page and holea_product_page_archive section ------*/
+
+	/* --------- JJ Make two column layout on category page---------*/
+	.holea_category_archive .elementor-element.elementor-wc-products ul.products li.product,
+	.holea_product_page_archive .elementor-element.elementor-wc-products ul.products li.product {
+		width: 50% !important;
+		padding: 2px !important;
+	}
+
+	/* Position original price on category archive page */
+	.holea_category_archive .sale .inner del span.woocommerce-Price-amount.amount {
+		bottom: 45px !important;
+	}
+
+	/* Position original price on products archive section page */
+	.holea_product_page_archive .sale .inner del span.woocommerce-Price-amount.amount {
+		bottom: 2px !important;
+	}
+
+	/* Resize buy button text*/
+	.holea_category_archive .product_type_variable.add_to_cart_button,
+	.holea_product_page_archive .product_type_variable.add_to_cart_button {
+		font-size: 100% !important;
+	}
+
+	/* ----- END Style holea_category_archive page and holea_product_page_archive section ------*/
+
+
+	.woocommerce ul.products li.product li.title a {
+		font-size: 13px;
+		line-height: 1;
+	}
+
+	/* JJ width of shop content */
+	.oceanwp-woo-total>span.woocommerce-Price-amount .amount {
+		font-size: large !important;
+		margin-left: 10px !important;
+		color: red !important;
+	}
+
+	/* JJ hide menucart items amount */
+	.wcmenucart-count {
+		display: none;
+	}
+
+	.current-shop-items-dropdown {
+		width: 270px !important;
+		position: fixed !important;
+		left: 50% !important;
+		top: 275px !important;
+		/* top: 47% !important; */
+		transform: translate(-50%, -50%);
+	}
+
+	/* JJ width of shop content */
+	#content-wrap {
+		max-width: 98%;
+	}
+
+	/* JJ Style and position buy button*/
+	.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+		padding: 0 !important;
+	}
+
+	/* JJ position and style kampanj banner */
+	li span.onsale {
+		padding-top: 4px !important;
+		padding-bottom: 2px !important;
+		top: 30px !important;
+		left: -4px !important;
+		font-size: x-small !important;
+	}
+
+	/* JJ On shop landing page position and the normal price */
+	.inner .price .woocommerce-Price-amount.amount {
+		background-color: #ff733b !important;
+		font-size: 25px !important;
+		left: 6px !important;
+		bottom: -21px !important;
+		position: absolute !important;
+		color: white !important;
+	}
+
+	/* JJ On shop landing page style on sale price */
+	.sale .inner ins span.woocommerce-Price-amount.amount {
+		position: absolute !important;
+		background-color: red !important;
+		color: white !important;
+		padding: 0px 5px 0px 5px !important;
+		left: 6px !important;
+		bottom: -21px !important;
+		font-size: 20px !important;
+
+	}
+
+	/* JJ On shop landing page style on sale old price */
+	.sale .inner del span.woocommerce-Price-amount.amount {
+		position: absolute !important;
+		/* left: -105px !important;
+	bottom: 33px !important; */
+		background-color: rgb(38, 35, 35) !important;
+		color: white !important;
+		opacity: 1 !important;
+		left: 6px !important;
+		z-index: 100 !important;
+		font-size: 18px !important;
+		bottom: 2px !important;
+	}
+
+	/* Duplicate above JJ Make mobile menu right column not wrap when extending search */
+	/* .holea_mobile_menu_right_column .elementor-widget-wrap{
+		flex-wrap: nowrap !important;
+		margin: -2px 0 -2px 0 !important;
+	} */
+
+	/* JJ vert. center mobile menu cart */
+	.elementor-menu-cart__wrapper {
+		position: relative !important;
+		top: 2px !important;
+	}
+
+	/* JJ reset and center mobile search widget */
+	/* .vitamin_search_widget{
+		display: flex !important;
+    align-self: center !important;
+		margin: 0 !important;
+	} */
+
+	/* .holea_mobile_menu {
+		padding: 10px 0 4px 0 !important;
+	}
+
+	.holea_mobile_menu_items {
+		top: -3px !important;
+		left: 4px !important;
+	} */
+
+	/* .cart_amount_container .elementor-button.elementor-size-sm{
+    flex-direction: row-reverse;
+    padding: 0px;
+} */
+
+	.fa-shopping-cart {
+		font-size: x-large;
+		margin-top: 8px;
+		color: white;
+		margin-right: 5px;
+	}
+
+	/* .holea_mobile_search_widget {
+		position: absolute !important;
+		top: -20px !important;
+		right: -42px !important;
+	} */
+
+	/* JJ Remove empty widget name tag */
+	.elementor-widget-container h5 {
+		display: none;
+	}
+
+
+	/* .height_auto_width_100 .products > .type-product {
+		height: auto !important;
+		width: 100% !important;
+	} */
+}
